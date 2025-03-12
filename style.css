@@ -1,0 +1,157 @@
+/* reset  */
+*{
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: linear-gradient(135deg, #0000ff, #ffc0cb); */
+    background: #db2945;
+    /* background-repeat: no-repeat; */
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 20px;
+}
+
+/* account- container style */
+
+.account-container{
+    /* background-color: #ffd700; */
+    background: #ef526d;
+    /* padding: 50px; */
+    width: 50%;
+    height: 60vh;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* account container button */
+
+.account-container button{
+    padding: 10px 20px;
+    color: #ef526d;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.9s ease-in-out;
+    /* width: 25px; */
+}
+
+.account-container button:hover{
+    background:#db2945;
+    color: #ffff;
+}
+
+/*  account container for H3*/
+
+.form-container{
+    width: 50%;
+    height: 80vh;
+    background:#ffff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.form-container h4{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: 700;
+}
+
+.form-container input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.form-container input:focus{
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0 0 5px rgba(219, 40, 69, 0.5);
+}
+
+.form-container button{
+    padding: 10px 20px;
+    background: #db2945;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.9s ease;
+}
+
+.form-container button:hover{
+    background:#ef526d;
+    color: #fff;
+}
+
+/* responsive design */
+
+@media (max-width:768px) {
+    .signup-container{
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .account-container, .form-container{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        /* text-align: center; */
+    }
+
+    
+}
+
+/* for small */
+
+@media (max-width:570px) {
+    .signup-container{
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin-top: auto;
+    }
+
+    .account-container, .form-container{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        /* text-align: center; */
+    }
+
+    
+}

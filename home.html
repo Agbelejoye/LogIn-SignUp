@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- login page -->
+    <title>Login page</title>
+    <!-- style.css -->
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <!-- signUp-Container -->
+    <div class="signIn-Container">
+      <!-- form-container -->
+      <div class="form-container">
+        <!-- form -->
+        <form id="signUp-form" action="" method="post">
+          <h4>Sign In</h4>
+
+          <!-- signUp -->
+          <div class="signUp">
+            <label for="username">Username</label>
+            <input
+              type="username"
+              name="username"
+              id="username"
+              placeholder="Enter your username"
+              required
+            />
+          </div>
+
+          <!-- signUp -->
+          <div class="signUp">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter your Password"
+              required
+            />
+          </div>
+
+          <!-- signUp-btn -->
+          <button type="submit" class="signUp-btn">Login</button>
+
+          <h3>Forgot Password?</h3>
+        </form>
+      </div>
+      <!-- account-container -->
+      <div class="account-container">
+        <h4>Don't have an account?</h4>
+        <a href="index.html"><button>Sign Up</button></a>
+      </div>
+    </div>
+  </body>
+</html>

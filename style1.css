@@ -1,0 +1,176 @@
+/* reset */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* body */
+body{
+    background-color: #007bff;
+    font-family:Arial, Helvetica, sans-serif;
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+
+/* Signup Container */
+.signIn-Container{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 80%;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+}
+
+/* account container */
+.account-container{
+    background-color:#1687ff;
+    padding: 150px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    color: #ffff;
+    width: 500px;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+    gap: 0.4cm;
+
+}
+
+
+/* account-container button  */
+.account-container button{
+    padding: 15px;
+    border-radius: 5px;
+    width:100px;
+    border: none;
+    font-size: 17px;
+    color: #1687ff; 
+    background-color:#ffff;
+}
+
+/* account-container button:hover */
+.account-container button:hover{
+    background-color: #0000ff;
+    color: #ffffff;
+    transition: 0.8s; 
+
+}
+
+/* form-container */
+.form-container{
+    background-color: #ffff;
+    height: 70vh;
+    width: 500px;
+    font-size: 23px;
+    padding: 30px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-container h4{
+    text-align: center;
+    margin-bottom: 40px;
+    color:#007bff;
+    font-size: 25px;
+    font-weight: 700px;
+}
+
+/* form-container h4 */
+.form-container h3{
+    text-align: center;
+    margin-top: 30px;
+    color: #1687ff;
+    font-size: 20px;
+}
+.form-container h3:hover{
+    text-decoration: underline;
+    color: #1687ff;
+}
+
+/* form-container input */
+.form-container input{
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 17px;
+
+}
+
+/* form-container input:focus */
+.form-container input:focus{
+    outline: none;
+    border-color: #db2845;
+    box-shadow:0 0 5px rgba (219,40,69,0.5) ;
+}
+
+/* form-container button */
+.form-container button{
+    padding: 10px 20px;
+    background-color:#007bff;
+    color:#ffffff;
+    font-size: 18px;
+    border-radius: 5px; 
+    padding: 20px;
+    width:100%;
+    border: none; 
+}
+
+/* form-container button:hover */
+.form-container button:hover{ 
+    background-color:#0000ff;
+    color: #ffffff; 
+    transition: 0.8s;
+}
+
+/* sign up  */
+.signUp{
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+/* responsive */
+@media (max-width: 768px) {
+    .signIn-Container{
+      flex-direction: column;
+      width: 90%;
+      height: auto;
+    }
+    .account-container,
+    .form-container{
+      width: 90%;
+      padding: 20px;
+      height: auto;
+      /* text-align: center; */
+    }
+  }
+  /* Responsive Design for iPhone 5 */
+@media screen and (max-width: 568px) {
+    .signIn-Container {
+        width: 95%;
+        padding: 15px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    input, .signUp-btn, .account-container button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h4, h3 {
+        font-size: 16px;
+    }
+}
