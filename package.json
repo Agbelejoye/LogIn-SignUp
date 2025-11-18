@@ -1,0 +1,20 @@
+{
+  "name": "authhub-database",
+  "version": "1.0.0",
+  "description": "Authentication system with JSON server database",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000",
+    "server": "json-server --watch db.json --port 3000"
+  },
+  "keywords": [
+    "authentication",
+    "json-server",
+    "database"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.17.4"
+  }
+}
